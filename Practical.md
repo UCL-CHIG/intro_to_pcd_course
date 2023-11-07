@@ -14,20 +14,25 @@ https://github.com/UCL-CHIG/intro_to_pcd_course
 For this practical, we will be looking at some diagnoses coded using Read codes, and prescriptions using drug codes. For the purpose of the practical, the descriptions these codes stand for have been added to the files. 
 The practical can be done using excel (answers will be provided using excel functions), but you can also use the statistical software of your choice. 
 
-1.	Open the patient file (PCD_patient_file.csv) and count how many patients are in the file, how many men and women there are, and how many patients have died. 
+
+1.	Open the patient file (PCD_patient_file.csv) and count how many patients are in the file, how many men and women there are, and how many patients have died.
+(*Hint: sex is coded as 1 for men and 2 for women*) 
 
 2.	Look up patient with ID number 216. How old were they when they registered with the practice, and how old were they at the last data collection date? 
+(*Hint: use lastdate, birth_date and registration_date*)
 
-3.	Open the diagnosis file (PCD_diagnosis_file.csv) and just take a look at the file itself. You’ll see each patient can have multiple diagnoses recorded, over time or on the same day. How many diagnoses records do the patients have, and what is the most common diagnosis code? 
+3.	Open the diagnosis file (PCD_diagnosis_file.csv) and just take a look at the file itself. You’ll see each patient can have multiple diagnoses recorded (using read codes), over time or on the same day. How many diagnoses are recorded, and what is the most common diagnosis code? 
+(*Hint: if you are using excel, you can use UNIQUE() and COUNTIF() functions*)
 
-4.	Now try to look up a specific condition, for instance non-insulin dependent diabetes mellitus (you might want to start with Read code C109.00). How many times has a diagnosis for this condition been entered? Would you want to use any other Read codes to enhance the phenotype? (Hint: look up code lists for diabetes on the HDR UK phenotype library)
-
+4.	Now try to look up a specific condition, for instance non-insulin dependent diabetes mellitus (you might want to start with Read code C109.00). How many times has a diagnosis for this condition been entered? Would you want to use any other Read codes to enhance the phenotype? (Hint: look up code lists for diabetes on the HDR UK phenotype library https://phenotypes.healthdatagateway.org/)
+    
 5.	Coming back to patient with ID 216, what does their diagnosis history look like? Does this patient have any underlying chronic health conditions? 
+(*Hint: make sure the data are sorted chronologically according to diagnosis_date*)
 
-6.	Now open the prescription file (PCD_prescription_file.csv). Same as the diagnosis file, start by just having a look a the layout of the file and see how many prescriptions were issued for this group of patients. 
+6.	Now open the prescription file (PCD_prescription_file.csv). Same as the diagnosis file, start by just having a look a the layout of the file and see how many prescriptions were issued for this group of patients.  
 
-7.	Which is the most common prescription? 
+7.	Which is the most common prescription?
+(*Hint: if you are using excel, you can use UNIQUE() and COUNTIF() functions*)
 
 8.	Look at patient 216 again, they only had 1 diagnosis code for an underlying condition. Does their prescription history give you more information on the severity or duration of this condition? 
-
 
